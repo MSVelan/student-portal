@@ -38,3 +38,15 @@ export async function POST(req: NextRequest) {
     { status: 201 },
   );
 }
+
+export async function DELETE(req: NextRequest) {
+  const id = req.nextUrl.searchParams.get("id");
+
+  if (!id) {
+    return NextResponse.json({ error: "id is required" }, { status: 400 });
+  }
+
+  db.prepare("DELETE FROM timetable WHERE id = ?").run(id);
+
+  return NextResponse.json({ success: true });
+}

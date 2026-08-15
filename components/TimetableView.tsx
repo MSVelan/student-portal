@@ -29,6 +29,11 @@ export default function TimetableView({ userId }: { userId: number }) {
     loadTimetable();
   };
 
+  const handleDelete = async (id: number) => {
+    await fetch(`/api/dashboard?id=${id}`, { method: "DELETE" });
+    loadTimetable();
+  };
+
   return (
     <div className="w-full max-w-lg flex flex-col gap-4">
       <h2 className="text-xl font-semibold">My Timetable</h2>
@@ -42,6 +47,12 @@ export default function TimetableView({ userId }: { userId: number }) {
             <span>{e.day}</span>
             <span>{e.time_slot}</span>
             <span className="font-medium">{e.subject}</span>
+            <button
+              onClick={() => handleDelete(e.id)}
+              className="text-red-500 text-xs"
+            >
+              Delete
+            </button>
           </li>
         ))}
         {entries.length === 0 && (

@@ -50,6 +50,13 @@ db.exec(`
     FOREIGN KEY (group_id) REFERENCES groups_table(id),
     FOREIGN KEY (user_id) REFERENCES users(id)
   );
+
+  CREATE TABLE IF NOT EXISTS settings (
+    user_id INTEGER PRIMARY KEY,
+    theme TEXT DEFAULT 'light',
+    notifications_enabled INTEGER DEFAULT 1,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+  );
 `);
 
 export default db;

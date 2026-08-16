@@ -19,7 +19,7 @@ export default function Navbar() {
       <Link href="/" className="font-bold text-lg text-gray-800">
         Student Portal
       </Link>
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         {links.map((link) => (
           <Link
             key={link.href}
@@ -33,6 +33,18 @@ export default function Navbar() {
             {link.label}
           </Link>
         ))}
+        <Link
+          href="/login"
+          className="text-sm text-gray-500 hover:text-gray-800"
+        >
+          Login
+        </Link>
+        <Link
+          href="/signup"
+          className="text-sm bg-blue-600 text-white rounded px-3 py-1"
+        >
+          Sign Up
+        </Link>
       </div>
     </nav>
   );

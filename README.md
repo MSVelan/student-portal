@@ -4,6 +4,13 @@ A simple student portal built to practice Git workflows — includes login/signu
 
 > This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and is not intended to be a production-grade portal — it focuses on demonstrating clean, meaningful commits across multiple Git branches.
 
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router, TypeScript)
+- **Styling:** Tailwind CSS v4
+- **Database:** SQLite via `better-sqlite3` (file-based, no external DB service required)
+- **Auth:** `bcryptjs` for password hashing
+
 ## Getting Started
 
 First, run the development server:

@@ -15,7 +15,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full border-b bg-white px-6 py-3 flex items-center justify-between">
+    <nav className="w-full border-b bg-white px-6 py-3 flex items-center justify-between shadow-sm sticky top-0 z-10">
       <Link href="/" className="font-bold text-lg text-gray-800">
         Student Portal
       </Link>

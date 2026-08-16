@@ -34,6 +34,8 @@ export default function SettingsPage() {
     <main className="min-h-screen flex flex-col items-center justify-center gap-6">
       <h1 className="text-2xl font-bold">Settings</h1>
 
+      <p className="text-sm text-gray-500">Customize your preferencs</p>
+
       <div className="flex flex-col gap-4 w-72">
         <label className="flex items-center justify-between">
           <span>Dark theme</span>

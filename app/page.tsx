@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-gray-50">
       <h1 className="text-4xl font-bold text-gray-800">Student Portal</h1>
       <p className="text-gray-500">
-        Timetable, groups, and notes — all in one place.
+        Timetable, groups, and notes -- all in one place.
       </p>
       <nav className="flex gap-4">
         <Link

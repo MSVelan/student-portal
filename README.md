@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Portal
+
+A simple student portal built to practice Git workflows — includes login/signup, profile management, a personalized timetable, group-based note sharing, and basic settings.
+
+> This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and is not intended to be a production-grade portal — it focuses on demonstrating clean, meaningful commits across multiple Git branches.
 
 ## Getting Started
 

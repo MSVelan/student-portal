@@ -75,3 +75,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - **Dashboard** — personalized timetable, add/delete entries
 - **Groups** — join groups by branch/year, share and view notes within a group
 - **Settings** — theme and notification preference toggles
+
+## Notes
+
+This project uses SQLite as a lightweight file-based database instead of a hosted DB service, so no external setup (Postgres, MongoDB, etc.) is required. All data is stored in `data/portal.db`, which is excluded from version control.

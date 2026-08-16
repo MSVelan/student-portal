@@ -18,3 +18,23 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({ notes });
 }
+
+export async function POST(req: NextRequest) {
+  const { groupId, userId, content } = await req.json();
+
+  if (!groupId || !userId || !content) {
+    return NextResponse.json(
+      { error: "All fields are required" },
+      { status: 400 },
+    );
+  }
+
+  const result = db
+    .prepare("INSERT INTO notes (group_id, user_id, content) VALUES (?, ?, ?)")
+    .run(groupId, userId, content);
+
+  return NextResponse.json(
+    { id: result.lastInsertRowid, content },
+    { status: 201 },
+  );
+}

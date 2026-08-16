@@ -11,6 +11,25 @@ A simple student portal built to practice Git workflows — includes login/signu
 - **Database:** SQLite via `better-sqlite3` (file-based, no external DB service required)
 - **Auth:** `bcryptjs` for password hashing
 
+## Project Structure
+
+```
+student-portal/
+├── app/
+│   ├── page.tsx              # Landing page
+│   ├── login/                # Login page
+│   ├── signup/                # Signup page
+│   ├── profile/                # Profile page
+│   ├── dashboard/                # Dashboard + timetable
+│   ├── settings/                # Settings page
+│   ├── groups/                # Groups + notes page
+│   └── api/                # Backend API routes
+├── components/                # Reusable React components
+├── lib/config/database.ts    # SQLite schema and connection
+├── data/                # SQLite database file (gitignored)
+└── README.md
+```
+
 ## Getting Started
 
 First, run the development server:

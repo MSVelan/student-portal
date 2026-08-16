@@ -59,3 +59,19 @@ student-portal/
    npm install -D tsx
    npx tsx lib/seed.ts
 ```
+
+## Running the Project
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Features
+
+- **Login/Signup** — account creation with hashed passwords
+- **Profile** — view and edit personal details (name, branch, year)
+- **Dashboard** — personalized timetable, add/delete entries
+- **Groups** — join groups by branch/year, share and view notes within a group
+- **Settings** — theme and notification preference toggles

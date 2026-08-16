@@ -36,7 +36,7 @@ export default function SettingsPage() {
 
       <p className="text-sm text-gray-500">Customize your preferencs</p>
 
-      <div className="flex flex-col gap-4 w-72">
+      <div className="flex flex-col gap-4 w-72 border rounded-lg p-6 bg-white shadow-sm">
         <label className="flex items-center justify-between">
           <span>Dark theme</span>
           <input
